@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/trt_cuda.dir/src/matmul_gpu_basic.cu.o CMakeFiles/trt_cuda.dir/src/main.cpp.o CMakeFiles/trt_cuda.dir/src/matmul_cpu.cpp.o CMakeFiles/trt_cuda.dir/src/utils.cpp.o CMakeFiles/trt_cuda.dir/cmake_device_link.o  -o trt_cuda  -L/usr/local/cuda/targets/x86_64-linux/lib -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

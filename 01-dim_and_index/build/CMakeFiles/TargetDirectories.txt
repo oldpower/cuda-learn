@@ -1,3 +1,0 @@
-/home/quan/workspace/cuda-learn/01-dim_and_index/build/CMakeFiles/edit_cache.dir
-/home/quan/workspace/cuda-learn/01-dim_and_index/build/CMakeFiles/rebuild_cache.dir
-/home/quan/workspace/cuda-learn/01-dim_and_index/build/CMakeFiles/trt_cuda.dir
