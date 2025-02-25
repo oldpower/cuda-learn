@@ -1,0 +1,3 @@
+/home/quan/workspace/cuda-learn/05-device-info/build/CMakeFiles/edit_cache.dir
+/home/quan/workspace/cuda-learn/05-device-info/build/CMakeFiles/rebuild_cache.dir
+/home/quan/workspace/cuda-learn/05-device-info/build/CMakeFiles/trt_cuda.dir

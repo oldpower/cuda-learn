@@ -1,0 +1,3 @@
+/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/edit_cache.dir
+/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/rebuild_cache.dir
+/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/trt_cuda.dir

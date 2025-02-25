@@ -1,0 +1,3 @@
+/home/quan/workspace/cuda-learn/03-matmul-basic/build/CMakeFiles/edit_cache.dir
+/home/quan/workspace/cuda-learn/03-matmul-basic/build/CMakeFiles/rebuild_cache.dir
+/home/quan/workspace/cuda-learn/03-matmul-basic/build/CMakeFiles/trt_cuda.dir

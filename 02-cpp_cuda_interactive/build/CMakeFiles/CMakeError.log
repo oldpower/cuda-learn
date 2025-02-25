@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1d08/fast 
+/usr/bin/make -f CMakeFiles/cmTC_c1d08.dir/build.make CMakeFiles/cmTC_c1d08.dir/build
+make[1]: Entering directory '/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1d08.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -std=gnu++11 -o CMakeFiles/cmTC_c1d08.dir/CheckSymbolExists.cxx.o -c /home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_c1d08
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1d08.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_c1d08.dir/CheckSymbolExists.cxx.o  -o cmTC_c1d08 
+/usr/bin/ld: CMakeFiles/cmTC_c1d08.dir/CheckSymbolExists.cxx.o: in function `main':
+CheckSymbolExists.cxx:(.text+0x1f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c1d08.dir/build.make:87: cmTC_c1d08] Error 1
+make[1]: Leaving directory '/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c1d08/fast] Error 2
+
+File /home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ccafc/fast 
+/usr/bin/make -f CMakeFiles/cmTC_ccafc.dir/build.make CMakeFiles/cmTC_ccafc.dir/build
+make[1]: Entering directory '/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ccafc.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu++11 -o CMakeFiles/cmTC_ccafc.dir/CheckFunctionExists.cxx.o -c /home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_ccafc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccafc.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ccafc.dir/CheckFunctionExists.cxx.o  -o cmTC_ccafc -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ccafc.dir/build.make:87: cmTC_ccafc] Error 1
+make[1]: Leaving directory '/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ccafc/fast] Error 2
+
+

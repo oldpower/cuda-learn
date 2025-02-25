@@ -1,0 +1,30 @@
+[
+    {
+        "arguments": [
+            "/usr/bin/c++",
+            "-c",
+            "-I/usr/local/cuda-11.5/include",
+            "-std=gnu++11",
+            "-o",
+            "CMakeFiles/trt_cuda.dir/src/main.cpp.o",
+            "../src/main.cpp"
+        ],
+        "directory": "/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build",
+        "file": "../src/main.cpp"
+    },
+    {
+        "arguments": [
+            "/usr/local/cuda-11.5/bin/nvcc",
+            "-c",
+            "-I/usr/local/cuda-11.5/include",
+            "-x",
+            "cu",
+            "-dc",
+            "-o",
+            "CMakeFiles/trt_cuda.dir/src/print_index.cu.o",
+            "../src/print_index.cu"
+        ],
+        "directory": "/home/quan/workspace/cuda-learn/02-cpp_cuda_interactive/build",
+        "file": "../src/print_index.cu"
+    }
+]
