@@ -9,7 +9,7 @@ void MatmulOnHost(float *M_host, float *N_host, float *P_host, int width)
             float sum = 0;
             for(int k=0;k<width;k++)
             {
-                float a = M_host[i*width + j];
+                float a = M_host[i*width + k];
                 float b = N_host[k*width + j];
                 sum +=a*b;
             }
