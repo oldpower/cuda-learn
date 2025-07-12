@@ -1,0 +1,8 @@
+
+**/build/
+
+**/.cache/
+
+*.nvvp
+
+*.json
