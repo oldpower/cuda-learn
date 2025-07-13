@@ -26,7 +26,15 @@ int main(){
         LOG("%-40s%d%s",         "Warp size: ",                   prop.warpSize, "");
 
         LOG("%-40s",             "*********************Parameter related************************");
-        LOG("%-40s%d%s",         "Max block numbers: ",           prop.maxBlocksPerMultiProcessor, "");
+        // LOG("%-40s%d%s",         "Max block numbers: ",           prop.maxBlocksPerMultiProcessor, "");
+        #if CUDA_VERSION >= 11000  // 新版本（JetPack 5.x+的CUDA 11.4+）
+            //printf("Max Threads Per MP: %d\n", prop.maxBlocksPerMultiProcessor);
+	    LOG("%-40s%d%s",         "Max block numbers: ",           prop.maxBlocksPerMultiProcessor, "");
+        #else                       // 旧版本（如JetPack 4.x的CUDA 10.2）
+            //printf("Max Blocks Per MP: %d\n", prop.maxThreadsPerMultiProcessor);  // 旧版本
+	    LOG("%-40s%d%s",         "Max thread numbers: ",           prop.maxThreadsPerMultiProcessor, "");
+        #endif
+
         LOG("%-40s%d%s",         "Max threads per block: ",       prop.maxThreadsPerBlock, "");
         LOG("%-40s%d:%d:%d%s",   "Max block dimension size:",     prop.maxThreadsDim[0], prop.maxThreadsDim[1], prop.maxThreadsDim[2], "");
         LOG("%-40s%d:%d:%d%s",   "Max grid dimension size: ",     prop.maxGridSize[0], prop.maxGridSize[1], prop.maxGridSize[2], "");

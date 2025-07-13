@@ -1,6 +1,10 @@
 # cuda-learn
 
 ## cmake和cuda
+```cmake
+# 设置算力架构
+set(CMAKE_CUDA_ARCHITECTURES "86")
+```
 
 
 ## git
